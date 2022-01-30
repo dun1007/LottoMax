@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<link rel ="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="description" content="What">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Know Your Lottery</title>
+    </head>
+    <body>
+        <main>
+        	<div id="wrapper">
+        		<div id="welcome">
+		        	<form onsubmit="return false">
+			        	<label>Which Lottery are you playing?</label>
+			        	<select id="lottery-selection" class="form-control">
+			        		<option value="lottomax">Lotto Max</option>
+			        		<option value="lotto649">Lotto 6/49</option>
+			        	</select>
+			        	</select>
+			        	<label>Current Jackpot:</label>
+			        	<input type="number" min="0" step="1" id="jackpot-amount" class="form-control" placeholder="(in million)"></input>
+			        	<label>How much are you spending?</label>
+			        	<input type="number" min="0" step="5" id="wager" class="form-control" placeholder="(multiple of min. ticket price)"></input>
+			        	<label>Do you want an extra?</label>
+			        	<input type="number" min="0" step="1" id="extra" class="form-control" placeholder=""></input>
+			        	<button id="submit" value="Let's Play!" class="btn btn-primary center-button">Let's Play!</button>
+			        	<p id="by-steve">by <a href="https://github.com/dun1007" target="_blank">Steve</a><br>It might take a bit if you spend millions at a time!</p>
+			        </form>
+		    	</div>
+		        <div id="result">
+		        	<p id="p-result" class="result-font">You have won x dollar with your wager of y.</p>
+		        	<p id="p-avg-gain" class="result-font">For each dollar spent, you earned x/y dollar. You had better odds than average, considering lottery's 50% average RTP.</p>
+		        	<p id="p-breakdown" class="result-font"><b>Draw Breakdown</b></p>
+		        	<div id="breakdown-window" class="well">
+		        	</div>
+		        	<button type="button" id="replay" class="btn btn-primary">Play Again</button>
+		        	<div id="result-footer">
+		        		<p id="p-note">Note: This result does not take annuity or tax into account, and the pool fund and individual splits are approximated from following samples & datas - <a href=https://lotto.bclc.com/lotto-max-and-extra/prizes-and-odds.html target="_blank">BCLC</a>, <a href=https://www.lottomaxnumbers.com/statistics target="_blank">LottoMaxNumbers</a> -, which may fluctuate beyond error toleration.</p>
+			        	<p id="p-advice">Suffering from gamble addiction? Visit <a href="https://www.gamesense.com/" target="_blank">GameSense</a> and speak with advisor.</p>
+			        </div>		   
+		        </div>
+	    	</div>
+       	</main>
+    	<script src="script.js"></script>
+    </body>
+</html>

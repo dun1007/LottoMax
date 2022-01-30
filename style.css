@@ -1,0 +1,130 @@
+body {
+	background-image: url('images/lottery_background.png');
+	background-size: cover;
+}
+
+#breakdown-window p {
+  	font-family: 'Times New Roman', sans-serif;
+  	font-size: 1em;
+  	margin: 0px;
+}
+
+#by-steve {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 0.8em;	
+	margin-top: 50px;
+}
+
+#welcome label{
+	font-family: Tahoma, sans-serif;
+	font-size: 1.5em;
+	margin-top: 25px;
+}
+
+.result-font {
+  	font-family: 'Trebuchet MS', sans-serif;
+  	font-size: 1.5em;	
+}
+
+#result #result-footer p {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 0.7em;
+}
+
+#wrapper {
+	height:  100vh;
+	width:  100vw;
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#welcome-image {
+	height: 400px;
+	width:  100%;
+	position: absolute;
+	top: -20%;
+}
+
+#welcome {
+	height: 600px;
+	width: 400px;
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background-color: white;
+	border: 1px solid;
+}
+
+.center-button {
+	margin-top: 50px;
+}
+
+#result {
+	height: 600px;
+	width: 400px;
+	position: absolute;
+	z-index:  -1;
+	opacity: 0;
+	background-color: white;
+	border: 1px solid;
+	padding: 15px;
+}
+
+#by-steve {
+	text-align: center;
+}
+#replay {
+	position:  relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+}
+
+
+#submit {
+	position:  relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#breakdown-window {
+	height: 30%;
+	overflow-y: scroll;
+}
+
+#p-breakdown {
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+	font-size: 1.5em;
+}
+
+
+.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.fadeOut {
+	animation-name: fadeOut;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+	0% {opacity:  1;}
+	100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+	0% {opacity:  0;}
+	100% { opacity: 1; }
+}
+
+.opacity {
+	opacity:  0.2;
+}
