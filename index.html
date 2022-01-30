@@ -7,11 +7,11 @@
 <html>
     <head>
 		<meta charset="UTF-8">
-		<meta name="description" content="What">
+		<meta name="description" content="Lotto Max Simulator">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<meta name="author" content="John Doe">
+		<meta name="author" content="Steve Yoo">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Know Your Lottery</title>
+    	<title>Lotto Max Simulator</title>
     </head>
     <body>
         <main>
@@ -21,17 +21,16 @@
 			        	<label>Which Lottery are you playing?</label>
 			        	<select id="lottery-selection" class="form-control">
 			        		<option value="lottomax">Lotto Max</option>
-			        		<option value="lotto649">Lotto 6/49</option>
 			        	</select>
 			        	</select>
 			        	<label>Current Jackpot:</label>
 			        	<input type="number" min="0" step="1" id="jackpot-amount" class="form-control" placeholder="(in million)"></input>
 			        	<label>How much are you spending?</label>
 			        	<input type="number" min="0" step="5" id="wager" class="form-control" placeholder="(multiple of min. ticket price)"></input>
-			        	<label>Do you want an extra?</label>
-			        	<input type="number" min="0" step="1" id="extra" class="form-control" placeholder=""></input>
+			        	<!--<label>Do you want an extra?</label>
+			        	<input type="number" min="0" step="1" id="extra" class="form-control" placeholder=""></input>-->
 			        	<button id="submit" value="Let's Play!" class="btn btn-primary center-button">Let's Play!</button>
-			        	<p id="by-steve">by <a href="https://github.com/dun1007" target="_blank">Steve</a><br>It might take a bit if you spend millions at a time!</p>
+			        	<p id="by-steve">by <a href="https://github.com/dun1007" target="_blank">Steve</a><br>Extra not included. Each dollar spent on Extra nets $0.39 on average.<br>It might take a bit if you spend millions at a time!</p>
 			        </form>
 		    	</div>
 		        <div id="result">

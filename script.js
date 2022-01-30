@@ -102,6 +102,11 @@ function performDraw() {
 	return prizeMoney;
 }
 
+function processLottoMaxExtra(wager) {
+	return 1/3764376*500000 + 1/9906*1000 + 1/141*10 + 1/6.8*1;
+}
+
+
 document.getElementById("submit").onclick = function updateProps() {
 	// initialize values
 	lottetyType = document.getElementById("lottery-selection").value;
@@ -123,14 +128,6 @@ document.getElementById("submit").onclick = function updateProps() {
 		'3':0
 	};
 	lottoMaxPrizeList = {
-		/*'7': lotteryJackpotAmt,
-		'6b':poolsFund*0.025/1.2,
-		'6':poolsFund*0.025/66.6,
-		'5b':poolsFund*0.015/176,
-		'5':poolsFund*0.035/3654.5,
-		'4b':poolsFund*0.0275/5914.5,
-		'4':20,
-		'3b':20*/
 		'7': lotteryJackpotAmt,
 		'6b':poolsFund*0.025/3,
 		'6':poolsFund*0.025/166.5,
@@ -147,6 +144,7 @@ document.getElementById("submit").onclick = function updateProps() {
 		prizeMoneyAccumulated += performDraw();
 		count+=1;	
 	}
+
 
 	// switch display 
 	primaryScreen.style.zindex = "-1";
